@@ -40,7 +40,9 @@ class Mattermost:
             self.team_name, channel_name
         )["id"]
 
-    def create_post(self, channel_name: Text, message: Text, code: bool = False) -> None:
+    def create_post(
+        self, channel_name: Text, message: Text, code: bool = False
+    ) -> None:
         channel_id = self.get_channel_by_name(channel_name)
 
         if code:
@@ -64,7 +66,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--team", help="Mattermost team")
     parser.add_argument("--channel", help="Mattermost channel to post to")
     parser.add_argument("--token", help="Mattermost token")
-    parser.add_argument("--code", help="Wrap message in code block")
+    parser.add_argument(
+        "--code", action="store_true", help="Wrap message in code block"
+    )
     parser.add_argument(
         "--no-verify",
         action="store_true",
