@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mmpost"
-version = "0.0.5"
+version = "0.0.6"
 description = "Mattermost post message"
 authors = ["Fredrik Borg <fredrik.borg@gmail.com>"]
 keywords = ["mattermost", "cli"]

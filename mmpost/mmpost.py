@@ -87,7 +87,7 @@ def parse_args() -> argparse.Namespace:
         args.message = sys.stdin.read().strip()
 
         if not args.message:
-            fatal("No message on stdin")
+            fatal("No message on stdin", exit_code=0)
 
     return args
 
