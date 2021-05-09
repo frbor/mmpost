@@ -38,6 +38,9 @@ message = <MESSAGE TO POST>
 # Skip SSL-verify (set to True to skip SSL verification)
 no-verify=
 
+# Wrap message in code block (```)
+code =
+
 ```
 
 Normally you would configure server, token, team (and channel) and only specify --message on command line.
