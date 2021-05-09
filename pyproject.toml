@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mmpost"
+version = "0.0.2"
+description = "Mattermost post message"
+authors = ["Fredrik Borg <fredrik.borg@gmail.com>"]
+keywords = ["mattermost", "cli"]
+readme = "README.md"
+license = "ISC"
+homepage = "https://github.com/frbor/mmpost"
+repository = "https://github.com/frbor/mmpost"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+mattermostdriver = "*"
+caep = "*"
+
+[tool.poetry.scripts]
+mmpost = "mmpost.mmpost:post"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
